@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
 {
     UtPod h(256);
 
-    Song s1("Childish Gambino", "Redbone", 27);
-    int result = h.addSong(s1);
+    Song c1("Childish Gambino", "Redbone", 27);
+    int result = h.addSong(c1);
     cout << "result = " << result << endl;
 
     h.showSongList();
@@ -30,29 +30,29 @@ int main(int argc, char *argv[])
     cout<< endl;
     h.showSongList();
     cout << "Remaining Memory- " << h.getRemainingMemory() << endl;
-    result = h.removeSong(s1);
+    result = h.removeSong(c1);
     cout <<  "delete result = " << result << endl;
     cout << "Remaining Memory- " << h.getRemainingMemory() << endl;
-    h.addSong(s1);
+    h.addSong(c1);
     h.clearMemory();
     h.showSongList();
 
-    h.addSong(s1);
+    h.addSong(c1);
 
-    Song s2("Frank Ocean", "Lost", 54);
-    result = h.addSong(s2);
+    Song c2("Frank Ocean", "Lost", 54);
+    result = h.addSong(c2);
     cout << "result = " << result << endl;
 
-    Song s3("Frank Ocean", "Lost", 22);
-    result = h.addSong(s3);
+    Song c3("Frank Ocean", "Lost", 22);
+    result = h.addSong(c3);
     cout << "result = " << result << endl;
 
-    Song s5("Beatles", "Hey Jude", 214);
-    result = h.addSong(s5);
+    Song c5("Beatles", "Hey Jude", 214);
+    result = h.addSong(c5);
     cout << "add result = " << result << endl;
 
-    Song s4("Childish Gambino", "Summertime Magic", 7);
-    result = h.addSong(s4);
+    Song c4("Childish Gambino", "Summertime Magic", 7);
+    result = h.addSong(c4);
     cout << "result = " << result << endl;
     Song a1("Phoenix", "1901", 2);
     Song a2("Miguel", "Banana Clip", 12);
@@ -72,27 +72,27 @@ int main(int argc, char *argv[])
     cout << endl;
     h.showSongList();
 
-    result = h.removeSong(s3);
+    result = h.removeSong(c3);
     cout << "delete result = " << result << endl;
 
-    result = h.removeSong(s1);
+    result = h.removeSong(c1);
     cout << "delete result = " << result << endl;
 
     h.showSongList();
 
-    result = h.removeSong(s1);
+    result = h.removeSong(c1);
     cout << "delete result = " << result << endl;
 
-    result = h.removeSong(s5);
+    result = h.removeSong(c5);
     cout << "delete result = " << result << endl;
 
-    result = h.removeSong(s4);
+    result = h.removeSong(c4);
     cout << "delete result = " << result << endl;
 
 
     h.showSongList();
 
-    result = h.addSong(s5);
+    result = h.addSong(c5);
     cout << "add result = " << result << endl;
 
     h.showSongList();
@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
     UtPod t;
     
     Song s1("Beatles", "Hey Jude1", 4);
-    int result = t.addSong(s1);
+    result = t.addSong(s1);
     cout << "result = " << result << endl;
     
     t.showSongList();
