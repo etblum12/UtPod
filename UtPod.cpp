@@ -24,7 +24,7 @@ UtPod::UtPod(int size)
  
 int UtPod::addSong(Song const &s)
 {
-  if(getRemainingMemory() > s.getSongSize()){
+  if(getRemainingMemory() >= s.getSongSize()){
      struct SongNode *temp = new struct SongNode;
      if(songs == NULL){
         temp->next = NULL;
