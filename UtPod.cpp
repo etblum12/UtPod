@@ -101,7 +101,7 @@ void UtPod::shuffle()
         return;
     }
 
-    for(int k = 0; k < (numSongs * 3); k++){
+    for(int k = 0; k < (numSongs * 5); k++){
         song1 = songs;
         song2 = songs;
         int rNum1 = (rand() % numSongs);
@@ -110,7 +110,7 @@ void UtPod::shuffle()
         for(int i = 0; i < rNum1; i++){
             song1 = song1->next;
         }
-        for(int j = 0; j < rNum1; j++){
+        for(int j = 0; j < rNum2; j++){
             song2 = song2->next;
         }
 
